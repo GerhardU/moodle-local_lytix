@@ -27,17 +27,36 @@ The `local_lytix` plugin is a comprehensive tool designed to enhance the digital
 
 ## Configuration
 
-See `settings.md`.
+See [settings.md](https://github.com/llttugraz/moodle-local_lytix/blob/main/settings.md).
+
+## Usage
+
+The `local_lytix` plugin has three different modes of operation (`Learner's Corner`, `Creator's Dashboard` and `Course Dashboard`).
+
+Switching between these three modes happens on global scope of the deployed Moodle instance and can be done under `Site administration` --> `Plugins` --> `LYTIX`.
+
+One of the modes is selected in the `platform` dropdown and also additional settings are available there, other crucial one being list of courses for which the plugin is active.
+
+After adding the course ID of the desired course and saving the changes the UI of the selected mode can be accessed on main course view in `More` dropdown.
+
+`Creator's Dashboard` is shown only to course creators and managers and provides data about number of enrollments in the course, number of participants and graduates, and time they spent on specific areas.
+
+`Learner's Corner` is available to both students and teachers but provide partially different functionalities depending on the role. Teachers can set events for all students and connect
+them to specific existing activities like quizzes, which students can then mark as done. Students can also create their own custom events which are seen only by themselves, and also `Learning Diary` entries.
+
+`Course Dashboard` can also be seen by both types of users, students can see their score and how it compares to other participants percentage-wise. Teachers in this mode again have additional data on activity completion by students and time-tracking details.
 
 ## Dependencies
-
-- [local_lytix](https://github.com/llttugraz/moodle-local_lytix).
 - [lytix_config](https://github.com/llttugraz/moodle-lytix_config).
 - [lytix_logs](https://github.com/llttugraz/moodle-lytix_logs).
 
 ## Subplugins
 
 All subplugins are located in the `moodle/local/lytix/modules` directory and can be found [here](https://github.com/llttugraz?tab=repositories&q=lytix_&type=&language=&sort=).
+
+## Privacy
+
+No personal data are stored.
 
 ## License
 
